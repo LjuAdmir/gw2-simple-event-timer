@@ -1,0 +1,16 @@
+[package]
+name = "gw2-simple-event-timer"
+version = "0.1.0"
+authors = ["AdmirLju"]
+edition = "2021"
+description = "Guild Wars 2 event timer for Raidcore Nexus"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+log = "0.4.21"
+
+[dependencies.nexus]
+git = "https://github.com/zerthox/nexus-rs"
+features = ["log"]
